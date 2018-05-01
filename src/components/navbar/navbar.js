@@ -29,7 +29,7 @@ class Navigation extends Component {
                     <Nav pullRight>
                         <NavItem collapse eventKey={4}>
                             <Link to='/sign-in'>
-                                Війти
+                                Увійти
                             </Link>
                         </NavItem>
                     </Nav>
