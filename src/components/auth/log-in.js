@@ -51,9 +51,6 @@ class LogIn extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:3000/teachers').then(res => {
-            console.log(res.data)
-        });
     }
 
     signIn (){
@@ -61,6 +58,8 @@ class LogIn extends Component {
             this.setState({
                 redirect: true,
             });
+            axios.defaults.headers.common['Authorization'] = response.data.token;
+            localStorage.setItem('auth', response.data.token);
             console.dir(response);
         })
     }
