@@ -16,14 +16,19 @@ class Navigation extends Component {
                     </Navbar.Header>
                     <Nav>
                         <NavItem eventKey={1}>
+                            <Link to='/visiters'>
+                                Відвідувачі
+                            </Link>
                         </NavItem>
                         <NavItem eventKey={2} >
                             <Link to='/'>
-                                Link
+                                Курси
                             </Link>
                         </NavItem>
                         <NavItem eventKey={3}>
-                            Link
+                            <Link to='/'>
+                                Заняття
+                            </Link>
                         </NavItem>
                     </Nav>
                     <Nav pullRight>
